@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="2020/11/04/vue-jian-jie-he-an-zhuang/"/>
+      <url>2020/11/04/vue-jian-jie-he-an-zhuang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vue简介和安装"><a href="#vue简介和安装" class="headerlink" title="vue简介和安装"></a>vue简介和安装</h1><h3 id="Vue简介"><a href="#Vue简介" class="headerlink" title="Vue简介"></a><code>Vue</code>简介</h3><h4 id="vue是一个渐进式框架"><a href="#vue是一个渐进式框架" class="headerlink" title="vue是一个渐进式框架"></a><code>vue</code>是一个渐进式框架</h4><p>渐进式意味着你可以将<code>vue</code>作为你应用的一部分嵌套进去，带来更丰富的交互体验</p><p>或者你希望将更多的业务逻辑使用<code>vue</code>实现，那么<code>vue</code>的核心库以及其生态系统比如<code>Core+Vue+router+Vuex</code>，也可以满足各种需求</p><h4 id="Vue有很多特点和Web开发中常见的高级功能"><a href="#Vue有很多特点和Web开发中常见的高级功能" class="headerlink" title="Vue有很多特点和Web开发中常见的高级功能"></a><code>Vue</code>有很多特点和<code>Web</code>开发中常见的高级功能</h4><h5 id="解耦视图和数据"><a href="#解耦视图和数据" class="headerlink" title="解耦视图和数据"></a>解耦视图和数据</h5><h5 id="可复用组件"><a href="#可复用组件" class="headerlink" title="可复用组件"></a>可复用组件</h5><h5 id="前端路由技术"><a href="#前端路由技术" class="headerlink" title="前端路由技术"></a>前端路由技术</h5><h5 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h5><h5 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h5><h3 id="Vue的安装"><a href="#Vue的安装" class="headerlink" title="Vue的安装"></a><code>Vue</code>的安装</h3><h4 id="一、直接CDN引入"><a href="#一、直接CDN引入" class="headerlink" title="一、直接CDN引入"></a>一、直接CDN引入</h4><pre><code>&lt;!-- 开发环境版本，包含有帮助的命令行警告 --&gt;    &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;    &lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;    &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;</code></pre><p>在<code>vue</code>官网右键链接另存为就可以下载下来了</p><h4 id="二、下载和引入"><a href="#二、下载和引入" class="headerlink" title="二、下载和引入"></a>二、下载和引入</h4><p>开发环境：<a href="https://vuejs.org/js/vue.js">https://vuejs.org/js/vue.js</a></p><p>生产环境：<a href="https://vuejs.org/js/vue.min.js">https://vuejs.org/js/vue.min.js</a></p><h4 id="三、NPM安装"><a href="#三、NPM安装" class="headerlink" title="三、NPM安装"></a>三、NPM安装</h4><p>后续通过<code>webpack</code>和<code>CLI</code>的使用，我们使用这个方式</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2020/11/03/hello-world/"/>
+      <url>2020/11/03/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
