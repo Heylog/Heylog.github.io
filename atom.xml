@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-03T13:11:14.318Z</updated>
+  <updated>2020-11-04T12:54:54.581Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -17,23 +17,56 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://heylog.github.io/2020/11/03/hello-world/"/>
-    <id>https://heylog.github.io/2020/11/03/hello-world/</id>
-    <published>2020-11-03T13:11:14.318Z</published>
-    <updated>2020-11-03T13:11:14.318Z</updated>
+    <title>Vue基本语法</title>
+    <link href="https://heylog.github.io/2019/11/22/vue-ji-ben-yu-fa/"/>
+    <id>https://heylog.github.io/2019/11/22/vue-ji-ben-yu-fa/</id>
+    <published>2019-11-22T09:45:32.000Z</published>
+    <updated>2020-11-04T12:54:54.581Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Vue基本语法&quot;&gt;&lt;a href=&quot;#Vue基本语法&quot; class=&quot;headerlink&quot; title=&quot;Vue基本语法&quot;&gt;&lt;/a&gt;Vue基本语法&lt;/h1&gt;&lt;h3 id=&quot;插值操作&quot;&gt;&lt;a href=&quot;#插值操作&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
+    <category term="Markdown" scheme="https://heylog.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Vue" scheme="https://heylog.github.io/tags/Vue/"/>
+    
+    <category term="Mustache" scheme="https://heylog.github.io/tags/Mustache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MVVM</title>
+    <link href="https://heylog.github.io/2019/10/11/mvvm/"/>
+    <id>https://heylog.github.io/2019/10/11/mvvm/</id>
+    <published>2019-10-11T05:24:52.000Z</published>
+    <updated>2020-11-04T12:52:11.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MVVM&quot;&gt;&lt;a href=&quot;#MVVM&quot; class=&quot;headerlink&quot; title=&quot;MVVM&quot;&gt;&lt;/a&gt;MVVM&lt;/h1&gt;&lt;h3 id=&quot;什么是MVVM&quot;&gt;&lt;a href=&quot;#什么是MVVM&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://heylog.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Vue" scheme="https://heylog.github.io/tags/Vue/"/>
+    
+    <category term="MVVM" scheme="https://heylog.github.io/tags/MVVM/"/>
     
   </entry>
   
@@ -42,7 +75,7 @@
     <link href="https://heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/"/>
     <id>https://heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/</id>
     <published>2019-10-03T15:06:49.000Z</published>
-    <updated>2020-11-04T12:41:12.384Z</updated>
+    <updated>2020-11-04T12:52:12.797Z</updated>
     
     
       
@@ -58,9 +91,9 @@
     <category term="Markdown" scheme="https://heylog.github.io/categories/Markdown/"/>
     
     
-    <category term="Typora" scheme="https://heylog.github.io/tags/Typora/"/>
+    <category term="Vue" scheme="https://heylog.github.io/tags/Vue/"/>
     
-    <category term="Markdown" scheme="https://heylog.github.io/tags/Markdown/"/>
+    <category term="渐进式框架" scheme="https://heylog.github.io/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
