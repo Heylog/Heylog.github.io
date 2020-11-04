@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-04T12:28:24.579Z</updated>
+  <updated>2020-11-03T13:11:14.318Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://heylog.github.io/2020/11/04/vue-jian-jie-he-an-zhuang/"/>
-    <id>https://heylog.github.io/2020/11/04/vue-jian-jie-he-an-zhuang/</id>
-    <published>2020-11-04T12:28:17.316Z</published>
-    <updated>2020-11-04T12:28:24.579Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;vue简介和安装&quot;&gt;&lt;a href=&quot;#vue简介和安装&quot; class=&quot;headerlink&quot; title=&quot;vue简介和安装&quot;&gt;&lt;/a&gt;vue简介和安装&lt;/h1&gt;&lt;h3 id=&quot;Vue简介&quot;&gt;&lt;a href=&quot;#Vue简介&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -50,6 +29,27 @@
         
         
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue简介和安装</title>
+    <link href="https://heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/"/>
+    <id>https://heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/</id>
+    <published>2019-10-03T15:06:49.000Z</published>
+    <updated>2020-11-04T12:32:18.287Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;vue简介和安装&quot;&gt;&lt;a href=&quot;#vue简介和安装&quot; class=&quot;headerlink&quot; title=&quot;vue简介和安装&quot;&gt;&lt;/a&gt;vue简介和安装&lt;/h1&gt;&lt;h3 id=&quot;Vue简介&quot;&gt;&lt;a href=&quot;#Vue简介&quot;</summary>
         
       
     
