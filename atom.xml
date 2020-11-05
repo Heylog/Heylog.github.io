@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-05T12:18:56.765Z</updated>
+  <updated>2020-11-05T13:18:56.729Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,118 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序组件的使用</title>
+    <link href="https://heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/"/>
+    <id>https://heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/</id>
+    <published>2019-11-14T10:24:25.000Z</published>
+    <updated>2020-11-05T13:18:56.729Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信小程序组件的使用&quot;&gt;&lt;a href=&quot;#微信小程序组件的使用&quot; class=&quot;headerlink&quot; title=&quot;微信小程序组件的使用&quot;&gt;&lt;/a&gt;微信小程序组件的使用&lt;/h1&gt;&lt;h3 id=&quot;组件的使用&quot;&gt;&lt;a href=&quot;#组件的使用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="wxs" scheme="https://heylog.github.io/tags/wxs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序wxs</title>
+    <link href="https://heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-wxs/"/>
+    <id>https://heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-wxs/</id>
+    <published>2019-11-14T02:44:45.000Z</published>
+    <updated>2020-11-05T13:19:02.391Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信小程序wxs&quot;&gt;&lt;a href=&quot;#微信小程序wxs&quot; class=&quot;headerlink&quot; title=&quot;微信小程序wxs&quot;&gt;&lt;/a&gt;微信小程序wxs&lt;/h1&gt;&lt;h3 id=&quot;1、wxs&quot;&gt;&lt;a href=&quot;#1、wxs&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="wxs" scheme="https://heylog.github.io/tags/wxs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序基础</title>
+    <link href="https://heylog.github.io/2019/11/13/wei-xin-xiao-cheng-xu-zhi-shi-dian/"/>
+    <id>https://heylog.github.io/2019/11/13/wei-xin-xiao-cheng-xu-zhi-shi-dian/</id>
+    <published>2019-11-13T03:30:19.000Z</published>
+    <updated>2020-11-05T13:19:04.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信小程序知识点&quot;&gt;&lt;a href=&quot;#微信小程序知识点&quot; class=&quot;headerlink&quot; title=&quot;微信小程序知识点&quot;&gt;&lt;/a&gt;微信小程序知识点&lt;/h1&gt;&lt;h3 id=&quot;hidden属性&quot;&gt;&lt;a href=&quot;#hidden属性&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序入门</title>
+    <link href="https://heylog.github.io/2019/11/12/wei-xin-xiao-cheng-xu-kai-fa/"/>
+    <id>https://heylog.github.io/2019/11/12/wei-xin-xiao-cheng-xu-kai-fa/</id>
+    <published>2019-11-12T01:27:22.000Z</published>
+    <updated>2020-11-05T13:19:00.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信小程序开发&quot;&gt;&lt;a href=&quot;#微信小程序开发&quot; class=&quot;headerlink&quot; title=&quot;微信小程序开发&quot;&gt;&lt;/a&gt;微信小程序开发&lt;/h1&gt;&lt;h2 id=&quot;小程序开发环境配置&quot;&gt;&lt;a href=&quot;#小程序开发环境配置&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>组件化</title>
