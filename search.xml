@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>组件的生命周期</title>
+      <link href="2019/11/15/zu-jian-de-sheng-ming-zhou-qi/"/>
+      <url>2019/11/15/zu-jian-de-sheng-ming-zhou-qi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h1><h3 id="组件的生命周期-1"><a href="#组件的生命周期-1" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h3><h4 id="created"><a href="#created" class="headerlink" title="created()"></a><code>created()</code></h4><p>在data同层级下：</p><pre class=" language-javascript"><code class="language-javascript">lifetimes<span class="token punctuation">:</span><span class="token punctuation">{</span>    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"this.data.msg"</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment" spellcheck="true">//能获取到</span>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"this.properties.item"</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>properties<span class="token punctuation">.</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//获取不到</span>    <span class="token punctuation">}</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre><p>created()在组件实例刚刚被创建的时候执行，这里不能调用<code>setData</code>方法</p><h4 id="attached"><a href="#attached" class="headerlink" title="attached()"></a><code>attached()</code></h4><p>在组件实例进入页面节点树的时候执行</p><p>可以获取<code>this.properties.item</code></p><pre><code>lifetimes:{    attached(){      console.log("this.data.msg",this.data.msg);               //能获取到      console.log("this.properties.item",this.properties.items);//能获取到    }},</code></pre><h4 id="ready"><a href="#ready" class="headerlink" title="ready()"></a><code>ready()</code></h4><p>组件布局完成后执行</p><pre><code>lifetimes:{    ready(){      console.log("this.data.msg",this.data.msg);               //能获取到      console.log("this.properties.item",this.properties.items);//能获取到    }},</code></pre><h4 id="move"><a href="#move" class="headerlink" title="move()"></a><code>move()</code></h4><p>组件被移动到节点树的另一个位置的时候执行</p><h4 id="detached"><a href="#detached" class="headerlink" title="detached()"></a><code>detached()</code></h4><p>组件被从节点树上移除的时候触发</p><pre><code>lifetimes:{    detached(){      console.log("detached");    }}</code></pre><h3 id="子传父"><a href="#子传父" class="headerlink" title="子传父"></a>子传父</h3><p>在子组件中：</p><p>方法要写在methods里面</p><p>在子组件的标签上绑定点击事件</p><pre><code>&lt;view class="box"  bindtap="handleClick"&gt;    &lt;view class="img"&gt;      &lt;image class="imgs" src="{{items.img}}"&gt;      &lt;/image&gt;    &lt;/view&gt;    &lt;view class="text"&gt;      {{items.name}}    &lt;/view&gt;    &lt;view class="count"&gt;{{items.count}}&lt;/view&gt;  &lt;/view&gt;</code></pre><p>在<code>methods</code>里写点击事件</p><p><code>this.triggerEvent</code></p><pre><code>methods: {    handleClick(){      console.log(this.properties.items.id);      this.triggerEvent("delete",id)    }     }})</code></pre><p>在父组件中接收自己定义的方法<br><img src="https://i.loli.net/2020/11/05/nWJGLiIqdSurBMH.png" alt="子传父-父组件绑定事件.png"></p><p>在父组件的<code>js</code>中写这个删除事件</p><pre><code>handleDelete(e){    console.log(e.detail);    let datas = this.data.arr;    let result =  datas.filter(v=&gt;{      return v.id!=e.detail;    })    this.setData({      arr:result    })  }</code></pre><h3 id="插槽slot"><a href="#插槽slot" class="headerlink" title="插槽slot"></a>插槽<code>slot</code></h3><p>有的存在一个固定样式，有的不存在那个样式，可以在子组件内设置一个插槽，谁需要这个插槽就调用，不需要就不调用</p><p>在子组件中：<br><img src="https://i.loli.net/2020/11/05/JTSb281Vko3BlW9.png" alt="插槽.png"></p><p>并且在<code>item.js</code>中设置</p><pre><code> options:{    multipleSlots:true }</code></pre><p>在需要调用这个插槽的地方<br><img src="https://i.loli.net/2020/11/05/ysoXNSt4vHQjmKZ.png" alt="父组件调用插槽.png"></p><p>样式在父组件中设置</p><p>大概效果如下：</p><p>使用插槽：<br><img src="https://i.loli.net/2020/11/05/qfQGWHPwsKT5rvt.png" alt="界面一使用插槽.png"></p><p>未使用插槽：<br><img src="https://i.loli.net/2020/11/05/49IYcE2feX8lzsQ.png" alt="界面二未使用插槽.png"></p><h3 id="vant-ui的使用"><a href="#vant-ui的使用" class="headerlink" title="vant-ui的使用"></a><code>vant-ui</code>的使用</h3><p>在<code>github</code>下载<code>vant-ui</code></p><p>放在自己的项目下解压</p><p>在项目下新建文件<code>plugins</code>,</p><p>再再目录下新建文件夹<code>vant</code></p><p>将解压包中的<code>dist</code>文件夹下所有文件站粘贴到刚才新建的<code>vant</code> 文件夹下</p><p>需要用这个组件的<code>json</code>文件添加：</p><pre><code>{  "usingComponents": {    "van-button":"/plugins/vant/button/index"  }}</code></pre><p><code>wxml</code>里可以使用了：</p><pre><code>&lt;van-button type="warning"&gt;警告按钮&lt;/van-button&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 微信小程序 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微信小程序 </tag>
+            
+            <tag> 小程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信小程序组件的使用</title>
       <link href="2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/"/>
       <url>2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/</url>

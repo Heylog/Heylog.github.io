@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微信小程序组件的使用, Heylog&#39;s blog">
+    <meta name="keywords" content="组件的生命周期, Heylog&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>微信小程序组件的使用 | Heylog&#39;s blog</title>
+    <title>组件的生命周期 | Heylog&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">微信小程序组件的使用</h1>
+                    <h1 class="description center-align post-title">组件的生命周期</h1>
                 </div>
             </div>
         </div>
@@ -369,7 +369,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-14
+                    2019-11-15
                 </div>
                 
 
@@ -385,22 +385,96 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="微信小程序组件的使用"><a href="#微信小程序组件的使用" class="headerlink" title="微信小程序组件的使用"></a>微信小程序组件的使用</h1><h3 id="组件的使用"><a href="#组件的使用" class="headerlink" title="组件的使用"></a>组件的使用</h3><h4 id="组件的使用原因"><a href="#组件的使用原因" class="headerlink" title="组件的使用原因"></a>组件的使用原因</h4><p>重复出现的代码在组件的使用下可以不用去写重复的代码</p>
-<p>例如两个页面的排版相似，只有内部的数据渲染不同，这样的部分可以使用组件去封装<br><img src="https://i.loli.net/2020/11/05/6AXOsKT8jfY2vVU.png" alt="components相似页面.png"></p>
-<p>如果两个页面都重新写，会有一大部分重复代码</p>
-<p>这里可以使用<code>components</code>组件</p>
-<h3 id="使用组件步骤"><a href="#使用组件步骤" class="headerlink" title="使用组件步骤"></a>使用组件步骤</h3><h4 id="一、创建文件夹以及文件"><a href="#一、创建文件夹以及文件" class="headerlink" title="一、创建文件夹以及文件"></a>一、创建文件夹以及文件</h4><p>创建<code>components</code>文件夹，里面创建复用的代码片段，例如创建一个<code>item</code>组件，右键创建<br><img src="https://i.loli.net/2020/11/05/KMicLjoqOp65zBT.png" alt="创建一个新的组件文件.png"></p>
-<h4 id="二、在item-wxml里写复用代码"><a href="#二、在item-wxml里写复用代码" class="headerlink" title="二、在item.wxml里写复用代码"></a>二、在<code>item.wxml</code>里写复用代码</h4><p>这样的样式就相同了</p>
-<h4 id="三、使用组件"><a href="#三、使用组件" class="headerlink" title="三、使用组件"></a>三、使用组件</h4><p>在需要使用的文件夹下的<code>json</code>文件内写引用<strong>组件标签名</strong>和<strong>地址</strong></p>
-<p>在<code>wxml</code>文件内就可以使用组件标签来调用这个写好的组件了<br><img src="https://i.loli.net/2020/11/05/PRlTFhULf1DvsW7.png" alt="使用组件的标签.png"></p>
-<h4 id="四、父组件自定义属性数据传向子组件"><a href="#四、父组件自定义属性数据传向子组件" class="headerlink" title="四、父组件自定义属性数据传向子组件"></a>四、父组件自定义属性数据传向子组件</h4><p>父组件数据传入子组件内原因：</p>
-<p>因为调用组件的每一个地方添加的数据可能都不同，也就是说每一个父组件的数据是独立的，所以每次单独调用组件的时候渲染的数据都是各自父组件自己的</p>
-<h5 id="首先父组件标签内自定义一个属性"><a href="#首先父组件标签内自定义一个属性" class="headerlink" title="首先父组件标签内自定义一个属性"></a>首先父组件标签内自定义一个属性</h5><p><img src="https://i.loli.net/2020/11/05/zLPKec5d2ZM6FV4.png" alt="组件自定义属性.png"></p>
-<h5 id="接着在子组件注册这个属性"><a href="#接着在子组件注册这个属性" class="headerlink" title="接着在子组件注册这个属性"></a>接着在子组件注册这个属性</h5><p><img src="https://i.loli.net/2020/11/05/pwbX75ZYSMargL4.png" alt="在子组件内注册这个属性.png"></p>
-<p>这样就将父组件内的数据传给了子组件，在子组件内调用父组件的数据就用</p>
-，如下
-<p><img src="https://i.loli.net/2020/11/05/CFX9yYiBZvWuT1Q.png" alt="使用父组件的属性.png"></p>
-<p>这里面的<code>img</code>,<code>name</code>,<code>count</code>都是父组件数据对象中有的属性</p>
+                <h1 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h1><h3 id="组件的生命周期-1"><a href="#组件的生命周期-1" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h3><h4 id="created"><a href="#created" class="headerlink" title="created()"></a><code>created()</code></h4><p>在data同层级下：</p>
+<pre class=" language-javascript"><code class="language-javascript">lifetimes<span class="token punctuation">:</span><span class="token punctuation">{</span>
+    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"this.data.msg"</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment" spellcheck="true">//能获取到</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"this.properties.item"</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>properties<span class="token punctuation">.</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//获取不到</span>
+
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>created()在组件实例刚刚被创建的时候执行，这里不能调用<code>setData</code>方法</p>
+<h4 id="attached"><a href="#attached" class="headerlink" title="attached()"></a><code>attached()</code></h4><p>在组件实例进入页面节点树的时候执行</p>
+<p>可以获取<code>this.properties.item</code></p>
+<pre><code>lifetimes:{
+    attached(){
+      console.log("this.data.msg",this.data.msg);               //能获取到
+      console.log("this.properties.item",this.properties.items);//能获取到
+    }
+},</code></pre>
+<h4 id="ready"><a href="#ready" class="headerlink" title="ready()"></a><code>ready()</code></h4><p>组件布局完成后执行</p>
+<pre><code>lifetimes:{
+    ready(){
+      console.log("this.data.msg",this.data.msg);               //能获取到
+      console.log("this.properties.item",this.properties.items);//能获取到
+    }
+},</code></pre>
+<h4 id="move"><a href="#move" class="headerlink" title="move()"></a><code>move()</code></h4><p>组件被移动到节点树的另一个位置的时候执行</p>
+<h4 id="detached"><a href="#detached" class="headerlink" title="detached()"></a><code>detached()</code></h4><p>组件被从节点树上移除的时候触发</p>
+<pre><code>lifetimes:{
+    detached(){
+      console.log("detached");
+    }
+}</code></pre>
+<h3 id="子传父"><a href="#子传父" class="headerlink" title="子传父"></a>子传父</h3><p>在子组件中：</p>
+<p>方法要写在methods里面</p>
+<p>在子组件的标签上绑定点击事件</p>
+<pre><code>&lt;view class="box"  bindtap="handleClick"&gt;
+    &lt;view class="img"&gt;
+      &lt;image class="imgs" src="{{items.img}}"&gt;
+
+      &lt;/image&gt;
+    &lt;/view&gt;
+    &lt;view class="text"&gt;
+      {{items.name}}
+    &lt;/view&gt;
+    &lt;view class="count"&gt;{{items.count}}&lt;/view&gt;
+  &lt;/view&gt;</code></pre>
+<p>在<code>methods</code>里写点击事件</p>
+<p><code>this.triggerEvent</code></p>
+<pre><code>methods: {
+    handleClick(){
+      console.log(this.properties.items.id);
+      this.triggerEvent("delete",id)
+    }   
+  }
+})</code></pre>
+<p>在父组件中接收自己定义的方法<br><img src="https://i.loli.net/2020/11/05/nWJGLiIqdSurBMH.png" alt="子传父-父组件绑定事件.png"></p>
+<p>在父组件的<code>js</code>中写这个删除事件</p>
+<pre><code>handleDelete(e){
+    console.log(e.detail);
+    let datas = this.data.arr;
+    let result =  datas.filter(v=&gt;{
+      return v.id!=e.detail;
+    })
+    this.setData({
+      arr:result
+    })  
+}</code></pre>
+<h3 id="插槽slot"><a href="#插槽slot" class="headerlink" title="插槽slot"></a>插槽<code>slot</code></h3><p>有的存在一个固定样式，有的不存在那个样式，可以在子组件内设置一个插槽，谁需要这个插槽就调用，不需要就不调用</p>
+<p>在子组件中：<br><img src="https://i.loli.net/2020/11/05/JTSb281Vko3BlW9.png" alt="插槽.png"></p>
+<p>并且在<code>item.js</code>中设置</p>
+<pre><code> options:{
+    multipleSlots:true
+ }</code></pre>
+<p>在需要调用这个插槽的地方<br><img src="https://i.loli.net/2020/11/05/ysoXNSt4vHQjmKZ.png" alt="父组件调用插槽.png"></p>
+<p>样式在父组件中设置</p>
+<p>大概效果如下：</p>
+<p>使用插槽：<br><img src="https://i.loli.net/2020/11/05/qfQGWHPwsKT5rvt.png" alt="界面一使用插槽.png"></p>
+<p>未使用插槽：<br><img src="https://i.loli.net/2020/11/05/49IYcE2feX8lzsQ.png" alt="界面二未使用插槽.png"></p>
+<h3 id="vant-ui的使用"><a href="#vant-ui的使用" class="headerlink" title="vant-ui的使用"></a><code>vant-ui</code>的使用</h3><p>在<code>github</code>下载<code>vant-ui</code></p>
+<p>放在自己的项目下解压</p>
+<p>在项目下新建文件<code>plugins</code>,</p>
+<p>再再目录下新建文件夹<code>vant</code></p>
+<p>将解压包中的<code>dist</code>文件夹下所有文件站粘贴到刚才新建的<code>vant</code> 文件夹下</p>
+<p>需要用这个组件的<code>json</code>文件添加：</p>
+<pre><code>{
+  "usingComponents": {
+    "van-button":"/plugins/vant/button/index"
+  }
+}</code></pre>
+<p><code>wxml</code>里可以使用了：</p>
+<pre><code>&lt;van-button type="warning"&gt;警告按钮&lt;/van-button&gt;</code></pre>
 
             </div>
             <hr/>
@@ -426,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/">https://Heylog.github.io/2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/</a>
+                    <a href="https://Heylog.github.io/2019/11/15/zu-jian-de-sheng-ming-zhou-qi/">https://Heylog.github.io/2019/11/15/zu-jian-de-sheng-ming-zhou-qi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -637,9 +711,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/11/15/zu-jian-de-sheng-ming-zhou-qi/">
                     <div class="card-image">
@@ -657,9 +732,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -672,6 +747,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -694,19 +770,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/14/wei-xin-xiao-cheng-xu-wxs/">
+                <a href="/2019/11/14/wei-xin-xiao-cheng-xu-zu-jian-de-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="微信小程序wxs">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="微信小程序组件的使用">
                         
-                        <span class="card-title">微信小程序wxs</span>
+                        <span class="card-title">微信小程序组件的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            微信小程序wxs可以在模板中使用方法，对数据再次处理。
+                            开发者可以将页面内的功能模块抽象成自定义组件，以便在不同的页面中重复使用；也可以将复杂的页面拆分成多个低耦合的模块，有助于代码维护。自定义组件在使用时与基础组件非常相似。
                         
                     </div>
                     <div class="publish-info">
@@ -734,10 +810,6 @@
                     
                     <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
                         <span class="chip bg-color">小程序</span>
-                    </a>
-                    
-                    <a href="/tags/wxs/">
-                        <span class="chip bg-color">wxs</span>
                     </a>
                     
                 </div>

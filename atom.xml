@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-05T13:23:41.255Z</updated>
+  <updated>2020-11-05T13:36:28.124Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>组件的生命周期</title>
+    <link href="https://heylog.github.io/2019/11/15/zu-jian-de-sheng-ming-zhou-qi/"/>
+    <id>https://heylog.github.io/2019/11/15/zu-jian-de-sheng-ming-zhou-qi/</id>
+    <published>2019-11-15T04:45:55.000Z</published>
+    <updated>2020-11-05T13:36:28.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;组件的生命周期&quot;&gt;&lt;a href=&quot;#组件的生命周期&quot; class=&quot;headerlink&quot; title=&quot;组件的生命周期&quot;&gt;&lt;/a&gt;组件的生命周期&lt;/h1&gt;&lt;h3 id=&quot;组件的生命周期-1&quot;&gt;&lt;a href=&quot;#组件的生命周期-1&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://heylog.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序组件的使用</title>
