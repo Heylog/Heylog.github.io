@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-05T12:03:06.309Z</updated>
+  <updated>2020-11-05T12:18:56.765Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>组件化</title>
+    <link href="https://heylog.github.io/2019/10/20/zu-jian-hua-chong-dian/"/>
+    <id>https://heylog.github.io/2019/10/20/zu-jian-hua-chong-dian/</id>
+    <published>2019-10-20T09:47:10.000Z</published>
+    <updated>2020-11-05T12:18:56.765Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;组件化-重点&quot;&gt;&lt;a href=&quot;#组件化-重点&quot; class=&quot;headerlink&quot; title=&quot;组件化(重点)&quot;&gt;&lt;/a&gt;组件化(重点)&lt;/h1&gt;&lt;h3 id=&quot;Vue组件化思想&quot;&gt;&lt;a href=&quot;#Vue组件化思想&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://heylog.github.io/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://heylog.github.io/tags/Vue/"/>
+    
+    <category term="组件通信" scheme="https://heylog.github.io/tags/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>v-on</title>
     <link href="https://heylog.github.io/2019/10/17/v-on/"/>
     <id>https://heylog.github.io/2019/10/17/v-on/</id>
     <published>2019-10-17T13:23:26.000Z</published>
-    <updated>2020-11-05T12:03:06.309Z</updated>
+    <updated>2020-11-05T12:04:06.827Z</updated>
     
     
       
