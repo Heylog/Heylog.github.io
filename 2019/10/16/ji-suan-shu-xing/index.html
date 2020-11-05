@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue简介和安装, Heylog&#39;s blog">
+    <meta name="keywords" content="计算属性computed, Heylog&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue简介和安装 | Heylog&#39;s blog</title>
+    <title>计算属性computed | Heylog&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue简介和安装</h1>
+                    <h1 class="description center-align post-title">计算属性computed</h1>
                 </div>
             </div>
         </div>
@@ -344,8 +344,8 @@
                                 <span class="chip bg-color">Vue</span>
                             </a>
                         
-                            <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                                <span class="chip bg-color">渐进式框架</span>
+                            <a href="/tags/computed/">
+                                <span class="chip bg-color">computed</span>
                             </a>
                         
                     </div>
@@ -369,7 +369,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-03
+                    2019-10-16
                 </div>
                 
 
@@ -385,16 +385,93 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="vue简介和安装"><a href="#vue简介和安装" class="headerlink" title="vue简介和安装"></a>vue简介和安装</h1><h3 id="Vue简介"><a href="#Vue简介" class="headerlink" title="Vue简介"></a><code>Vue</code>简介</h3><h4 id="vue是一个渐进式框架"><a href="#vue是一个渐进式框架" class="headerlink" title="vue是一个渐进式框架"></a><code>vue</code>是一个渐进式框架</h4><p>渐进式意味着你可以将<code>vue</code>作为你应用的一部分嵌套进去，带来更丰富的交互体验</p>
-<p>或者你希望将更多的业务逻辑使用<code>vue</code>实现，那么<code>vue</code>的核心库以及其生态系统比如<code>Core+Vue+router+Vuex</code>，也可以满足各种需求</p>
-<h4 id="Vue有很多特点和Web开发中常见的高级功能"><a href="#Vue有很多特点和Web开发中常见的高级功能" class="headerlink" title="Vue有很多特点和Web开发中常见的高级功能"></a><code>Vue</code>有很多特点和<code>Web</code>开发中常见的高级功能</h4><h5 id="解耦视图和数据"><a href="#解耦视图和数据" class="headerlink" title="解耦视图和数据"></a>解耦视图和数据</h5><h5 id="可复用组件"><a href="#可复用组件" class="headerlink" title="可复用组件"></a>可复用组件</h5><h5 id="前端路由技术"><a href="#前端路由技术" class="headerlink" title="前端路由技术"></a>前端路由技术</h5><h5 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h5><h5 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h5><h3 id="Vue的安装"><a href="#Vue的安装" class="headerlink" title="Vue的安装"></a><code>Vue</code>的安装</h3><h4 id="一、直接CDN引入"><a href="#一、直接CDN引入" class="headerlink" title="一、直接CDN引入"></a>一、直接CDN引入</h4><pre><code>&lt;!-- 开发环境版本，包含有帮助的命令行警告 --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;
-    &lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;</code></pre>
-<p>在<code>vue</code>官网右键链接另存为就可以下载下来了</p>
-<h4 id="二、下载和引入"><a href="#二、下载和引入" class="headerlink" title="二、下载和引入"></a>二、下载和引入</h4><p>开发环境：<a target="_blank" rel="noopener" href="https://vuejs.org/js/vue.js">https://vuejs.org/js/vue.js</a></p>
-<p>生产环境：<a target="_blank" rel="noopener" href="https://vuejs.org/js/vue.min.js">https://vuejs.org/js/vue.min.js</a></p>
-<h4 id="三、NPM安装"><a href="#三、NPM安装" class="headerlink" title="三、NPM安装"></a>三、NPM安装</h4><p>后续通过<code>webpack</code>和<code>CLI</code>的使用，我们使用这个方式</p>
+                <h1 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h1><h3 id="什么是计算属性"><a href="#什么是计算属性" class="headerlink" title="什么是计算属性"></a>什么是计算属性</h3><p>我们知道，在模板中可以直接通过插值语法显示一些data中的数据</p>
+<p>但是在某些情况下，我们可能需要对数据进行一些转化后再显示，或者需要将多个数据结合起来进行显示</p>
+<pre><code>比如我们有`firstName`和`lastName`两个变量，我们需要显示完整的名称
+
+
+但是如果多个地方都需要显示完整的名称，我们就需要写多个`{{firstName}}`和`{{lastName}}`</code></pre>
+<p>我们可以将上面的代码换成计算属性：</p>
+<pre><code>我们发现计算属性是写在实例的`computed`选项中的</code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>{{firstName+'  '+lastName}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>{{firstName}} {{lastName}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>{{getFullName()}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>{{fullName}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../js/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+        <span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            el<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`#app`</span></span><span class="token punctuation">,</span>
+            data<span class="token punctuation">:</span> <span class="token punctuation">{</span> 
+                firstName<span class="token punctuation">:</span> <span class="token string">'Lebron'</span><span class="token punctuation">,</span>
+                lastName<span class="token punctuation">:</span><span class="token string">'James'</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            computed<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">/* 计算属性，一般不用动词 */</span>
+                fullName<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">'  '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                getFullName <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">'  '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<p>计算属性不要加小括号()</p>
+<h3 id="计算属性的复杂操作"><a href="#计算属性的复杂操作" class="headerlink" title="计算属性的复杂操作"></a>计算属性的复杂操作</h3><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>总价格:{{totalPrice}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../js/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript"><span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            el<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`#app`</span></span><span class="token punctuation">,</span>
+            data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                books<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">110</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'Unix编程艺术'</span><span class="token punctuation">,</span> price<span class="token punctuation">:</span> <span class="token number">119</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">111</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'代码大全'</span><span class="token punctuation">,</span> price<span class="token punctuation">:</span> <span class="token number">105</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">112</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'深入理解计算机原理'</span><span class="token punctuation">,</span> price<span class="token punctuation">:</span> <span class="token number">98</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">113</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'现代操作系统'</span><span class="token punctuation">,</span> price<span class="token punctuation">:</span> <span class="token number">87</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                totalPrice<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">let</span> result  <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+                    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>books<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        result <span class="token operator">+</span><span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>books<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>price
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">return</span> result
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="计算属性的setter和getter"><a href="#计算属性的setter和getter" class="headerlink" title="计算属性的setter和getter"></a>计算属性的<code>setter</code>和<code>getter</code></h3><p>我们之前在计算属性的基础操作中使用了一个方法<code>fullName</code>,如下</p>
+<pre><code>fullName:function(){
+                    return this.firstName + '  ' + this.lastName
+                }</code></pre>
+<p>其实是这样的</p>
+<pre><code>computed: {
+                fullName:{
+                    set:function(){
+
+                    },
+                    get:function(){
+                        return this.firstName + '  ' + this.lastName
+                    }
+                }
+            }</code></pre>
+<p>其中<code>set</code>属性是不需要实现的，我们不希望计算属性有<code>set</code>属性，其实计算属性是个只读属性，如下</p>
+<pre><code>computed: {
+                fullName:{
+                    get:function(){
+                        return this.firstName + '  ' + this.lastName
+                    }
+                }
+            }</code></pre>
+<p>我们方便使用就使用第一种方式</p>
+<p><strong>计算属性的方法，即使调用多次，计算属性也只是调用了一次，内部是有缓存的</strong>，如果方法的返回结果不变，就不会重复调用多次，直接调用缓存。</p>
+<p><strong>使用<code>methods</code>的时候，调用几次，函数就会调用几次</strong></p>
 
             </div>
             <hr/>
@@ -420,7 +497,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/">https://Heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/</a>
+                    <a href="https://Heylog.github.io/2019/10/16/ji-suan-shu-xing/">https://Heylog.github.io/2019/10/16/ji-suan-shu-xing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -462,8 +539,8 @@
                                     <span class="chip bg-color">Vue</span>
                                 </a>
                             
-                                <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                                    <span class="chip bg-color">渐进式框架</span>
+                                <a href="/tags/computed/">
+                                    <span class="chip bg-color">computed</span>
                                 </a>
                             
                         </div>
@@ -635,24 +712,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/08/mvvm/">
+                <a href="/2019/10/17/v-on/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="MVVM">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="v-on">
                         
-                        <span class="card-title">MVVM</span>
+                        <span class="card-title">v-on</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MVVM是Model-View-ViewModel的简写。它本质上就是MVC 的改进版.
+                            v-on就是用于绑定事件的。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-17
                         </span>
                         <span class="publish-author">
                             
@@ -673,8 +750,8 @@
                         <span class="chip bg-color">Vue</span>
                     </a>
                     
-                    <a href="/tags/MVVM/">
-                        <span class="chip bg-color">MVVM</span>
+                    <a href="/tags/v-on%E6%8C%87%E4%BB%A4/">
+                        <span class="chip bg-color">v-on指令</span>
                     </a>
                     
                 </div>
@@ -685,27 +762,27 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/03/vue-jian-jie-he-an-zhuang/">
+                <a href="/2019/10/11/vue-ji-ben-yu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="vue简介和安装">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Vue基本语法">
                         
-                        <span class="card-title">vue简介和安装</span>
+                        <span class="card-title">Vue基本语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            渐进式意味着你可以将`vue`作为你应用的一部分嵌套进去，带来更丰富的交互体验.
+                            插值操作.
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-11
                             </span>
                         <span class="publish-author">
                             
@@ -719,7 +796,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -727,8 +803,8 @@
                         <span class="chip bg-color">Vue</span>
                     </a>
                     
-                    <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                        <span class="chip bg-color">渐进式框架</span>
+                    <a href="/tags/Mustache/">
+                        <span class="chip bg-color">Mustache</span>
                     </a>
                     
                 </div>

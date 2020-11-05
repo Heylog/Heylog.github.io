@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue简介和安装, Heylog&#39;s blog">
+    <meta name="keywords" content="v-on, Heylog&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue简介和安装 | Heylog&#39;s blog</title>
+    <title>v-on | Heylog&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue简介和安装</h1>
+                    <h1 class="description center-align post-title">v-on</h1>
                 </div>
             </div>
         </div>
@@ -344,8 +344,8 @@
                                 <span class="chip bg-color">Vue</span>
                             </a>
                         
-                            <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                                <span class="chip bg-color">渐进式框架</span>
+                            <a href="/tags/v-on%E6%8C%87%E4%BB%A4/">
+                                <span class="chip bg-color">v-on指令</span>
                             </a>
                         
                     </div>
@@ -369,7 +369,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-03
+                    2019-10-17
                 </div>
                 
 
@@ -385,16 +385,38 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="vue简介和安装"><a href="#vue简介和安装" class="headerlink" title="vue简介和安装"></a>vue简介和安装</h1><h3 id="Vue简介"><a href="#Vue简介" class="headerlink" title="Vue简介"></a><code>Vue</code>简介</h3><h4 id="vue是一个渐进式框架"><a href="#vue是一个渐进式框架" class="headerlink" title="vue是一个渐进式框架"></a><code>vue</code>是一个渐进式框架</h4><p>渐进式意味着你可以将<code>vue</code>作为你应用的一部分嵌套进去，带来更丰富的交互体验</p>
-<p>或者你希望将更多的业务逻辑使用<code>vue</code>实现，那么<code>vue</code>的核心库以及其生态系统比如<code>Core+Vue+router+Vuex</code>，也可以满足各种需求</p>
-<h4 id="Vue有很多特点和Web开发中常见的高级功能"><a href="#Vue有很多特点和Web开发中常见的高级功能" class="headerlink" title="Vue有很多特点和Web开发中常见的高级功能"></a><code>Vue</code>有很多特点和<code>Web</code>开发中常见的高级功能</h4><h5 id="解耦视图和数据"><a href="#解耦视图和数据" class="headerlink" title="解耦视图和数据"></a>解耦视图和数据</h5><h5 id="可复用组件"><a href="#可复用组件" class="headerlink" title="可复用组件"></a>可复用组件</h5><h5 id="前端路由技术"><a href="#前端路由技术" class="headerlink" title="前端路由技术"></a>前端路由技术</h5><h5 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h5><h5 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h5><h3 id="Vue的安装"><a href="#Vue的安装" class="headerlink" title="Vue的安装"></a><code>Vue</code>的安装</h3><h4 id="一、直接CDN引入"><a href="#一、直接CDN引入" class="headerlink" title="一、直接CDN引入"></a>一、直接CDN引入</h4><pre><code>&lt;!-- 开发环境版本，包含有帮助的命令行警告 --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;
-    &lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;</code></pre>
-<p>在<code>vue</code>官网右键链接另存为就可以下载下来了</p>
-<h4 id="二、下载和引入"><a href="#二、下载和引入" class="headerlink" title="二、下载和引入"></a>二、下载和引入</h4><p>开发环境：<a target="_blank" rel="noopener" href="https://vuejs.org/js/vue.js">https://vuejs.org/js/vue.js</a></p>
-<p>生产环境：<a target="_blank" rel="noopener" href="https://vuejs.org/js/vue.min.js">https://vuejs.org/js/vue.min.js</a></p>
-<h4 id="三、NPM安装"><a href="#三、NPM安装" class="headerlink" title="三、NPM安装"></a>三、NPM安装</h4><p>后续通过<code>webpack</code>和<code>CLI</code>的使用，我们使用这个方式</p>
+                <h1 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h1><h3 id="v-on的语法糖"><a href="#v-on的语法糖" class="headerlink" title="v-on的语法糖"></a><code>v-on</code>的语法糖</h3><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>{{counter}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>increment<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>decrement<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../js/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+        <span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            el<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`#app`</span></span><span class="token punctuation">,</span>
+            data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                counter<span class="token punctuation">:</span><span class="token number">0</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span>counter<span class="token operator">++</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token function">decrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span>counter<span class="token operator">--</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="v-on参数"><a href="#v-on参数" class="headerlink" title="v-on参数"></a><code>v-on</code>参数</h3><p>通过<code>methods</code>中定义方法，以供<code>@click</code>调用的时候，需要注意参数问题</p>
+<h4 id="情况一"><a href="#情况一" class="headerlink" title="情况一"></a>情况一</h4><p>如果该方法不需要额外参数，那么方法后的()可以不添加</p>
+<p>注意：在事件定义时，写函数时省略了小括号，但是方法本身是需要一个参数的，这个时候，<code>vue</code>会默认将浏览器生产的<code>event</code>事件对象作为参数传入到方法中</p>
+<h4 id="情况二"><a href="#情况二" class="headerlink" title="情况二"></a>情况二</h4><p>方法定义的时候我们需要<code>event</code>对象，同时也需要其他的参数</p>
+<p>在调用方法时我们需要使用<code>$event</code>手动获取到浏览器参数的<code>event</code>对象</p>
+<p><img src="https://i.loli.net/2020/11/05/mrp7toyRNbfFSWI.png" alt="v-on传参.png"><br><img src="https://i.loli.net/2020/11/05/Lvu2ElxFsI4kVYK.png" alt="v-on传参结果.png"></p>
+<h3 id="v-on修饰符"><a href="#v-on修饰符" class="headerlink" title="v-on修饰符"></a><code>v-on</code>修饰符</h3><h4 id="阻止事件冒泡-stop"><a href="#阻止事件冒泡-stop" class="headerlink" title="阻止事件冒泡.stop"></a>阻止事件冒泡<code>.stop</code></h4><p><code>@click.stop="btnClick"</code></p>
+<h4 id="阻止默认事件-prevent"><a href="#阻止默认事件-prevent" class="headerlink" title="阻止默认事件.prevent"></a>阻止默认事件<code>.prevent</code></h4><p><code>@click.prevent="submitClick"</code>例如点击<code>submit</code>自动提交数据，使用该修饰符之后，点击后会触发方法，而不会默认提交数据</p>
+<h4 id="监听键盘的键帽"><a href="#监听键盘的键帽" class="headerlink" title="监听键盘的键帽"></a>监听键盘的键帽</h4><p><code>@keyup.enter="keyup"</code>这个是监听到点击<code>enter</code>后执行<code>keyup</code>方法</p>
+<h4 id="监听组件根元素的原生事件-native"><a href="#监听组件根元素的原生事件-native" class="headerlink" title="监听组件根元素的原生事件.native"></a>监听组件根元素的原生事件<code>.native</code></h4><h4 id="只触发一次回调-once"><a href="#只触发一次回调-once" class="headerlink" title="只触发一次回调.once"></a>只触发一次回调<code>.once</code></h4><p><code>@click.once="btnClick"</code>只会第一次点击触发该方法</p>
 
             </div>
             <hr/>
@@ -420,7 +442,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/">https://Heylog.github.io/2019/10/03/vue-jian-jie-he-an-zhuang/</a>
+                    <a href="https://Heylog.github.io/2019/10/17/v-on/">https://Heylog.github.io/2019/10/17/v-on/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -462,8 +484,8 @@
                                     <span class="chip bg-color">Vue</span>
                                 </a>
                             
-                                <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                                    <span class="chip bg-color">渐进式框架</span>
+                                <a href="/tags/v-on%E6%8C%87%E4%BB%A4/">
+                                    <span class="chip bg-color">v-on指令</span>
                                 </a>
                             
                         </div>
@@ -631,81 +653,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/10/08/mvvm/">
+                <a href="/2019/10/17/v-on/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="MVVM">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="v-on">
                         
-                        <span class="card-title">MVVM</span>
+                        <span class="card-title">v-on</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MVVM是Model-View-ViewModel的简写。它本质上就是MVC 的改进版.
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-08
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
-                    </a>
-                    
-                    <a href="/tags/MVVM/">
-                        <span class="chip bg-color">MVVM</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/03/vue-jian-jie-he-an-zhuang/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="vue简介和安装">
-                        
-                        <span class="card-title">vue简介和安装</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            渐进式意味着你可以将`vue`作为你应用的一部分嵌套进去，带来更丰富的交互体验.
+                            v-on就是用于绑定事件的。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-17
                             </span>
                         <span class="publish-author">
                             
@@ -727,8 +697,61 @@
                         <span class="chip bg-color">Vue</span>
                     </a>
                     
-                    <a href="/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%A1%86%E6%9E%B6/">
-                        <span class="chip bg-color">渐进式框架</span>
+                    <a href="/tags/v-on%E6%8C%87%E4%BB%A4/">
+                        <span class="chip bg-color">v-on指令</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/10/16/ji-suan-shu-xing/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="计算属性computed">
+                        
+                        <span class="card-title">计算属性computed</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计算属性是基于它的依赖缓存。计算属性只有在它的相关依赖发生改变时时将重新取值。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Vue/" class="post-category">
+                                    Vue
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
+                    </a>
+                    
+                    <a href="/tags/computed/">
+                        <span class="chip bg-color">computed</span>
                     </a>
                     
                 </div>
