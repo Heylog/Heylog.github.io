@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-09T11:58:42.879Z</updated>
+  <updated>2020-11-09T12:35:45.016Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TypeScript的基本使用</title>
+    <link href="https://heylog.github.io/2020/01/30/typescript/"/>
+    <id>https://heylog.github.io/2020/01/30/typescript/</id>
+    <published>2020-01-30T12:33:30.000Z</published>
+    <updated>2020-11-09T12:35:45.016Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;TypeScript&quot;&gt;&lt;a href=&quot;#TypeScript&quot; class=&quot;headerlink&quot; title=&quot;TypeScript&quot;&gt;&lt;/a&gt;TypeScript&lt;/h1&gt;&lt;h2 id=&quot;1-1-TS简介&quot;&gt;&lt;a href=&quot;#1-1-TS简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="TypeScript" scheme="https://heylog.github.io/categories/TypeScript/"/>
+    
+    
+    <category term="TypeScript" scheme="https://heylog.github.io/tags/TypeScript/"/>
+    
+  </entry>
   
   <entry>
     <title>uni-app的基本使用</title>
