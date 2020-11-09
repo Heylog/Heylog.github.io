@@ -457,7 +457,7 @@
 <li><strong>为什么要实现虚拟DOM（虚拟DOM的目的）：</strong>为了实现页面中DOM 元素的高效更新</li>
 <li><strong>DOM和虚拟DOM的区别</strong>：</li>
 </ul>
-<p><img src="images/%E8%99%9A%E6%8B%9FDOM%E7%9A%84%E6%A6%82%E5%BF%B5.png"></p>
+<p><img src="https://i.loli.net/2020/11/09/qZjtGbKpcm2eIxW.png" alt="虚拟DOM的概念.png"></p>
 <p><img src="https://i.loli.net/2020/11/09/Z6YObrACqSlG5if.png" alt="1552877849641.png"></p>
 <h3 id="1-4-2-react的Diff算法-Reconciliation"><a href="#1-4-2-react的Diff算法-Reconciliation" class="headerlink" title="1.4.2 react的Diff算法(Reconciliation)"></a>1.4.2 react的Diff算法(Reconciliation)</h3><p><img src="https://i.loli.net/2020/11/09/r7gyDbEYfUIXaW9.png" alt="Diff.png"></p>
 <p>其实传统diff算法就是对每个节点一一对比，循环遍历所有的子节点，然后判断子节点的更新状态。通过循环递归对节点进行依次对比，算法时间复杂度达到 O(n^3) ，n是树的节点数，这个有多可怕呢？——如果要展示1000个节点，得执行上亿次比较。即便是CPU快能执行30亿条命令，也<strong>很难在一秒内</strong>计算出差异。</p>
@@ -470,7 +470,7 @@
 <blockquote>
 <p>那么问题来了，如果DOM节点出现了跨层级操作,diff会咋办呢？<br>答：diff只简单考虑同层级的节点位置变换，如果是跨层级的话，只有创建节点和删除节点的操作。</p>
 </blockquote>
-<p><img src="assets%5C1562723819718.png" alt="1562723819718"></p>
+<p><img src="https://i.loli.net/2020/11/09/9vtH3A8sDhYj6ql.png" alt="1562723819718.png"></p>
 <blockquote>
 <p>如上图所示，以A为根节点的整棵树会被<strong>重新创建，而不是移动</strong>，因此 <strong>官方建议不要进行DOM节点跨层级操作，可以通过CSS隐藏、显示节点，而不是真正地移除、添加DOM节点</strong>。</p>
 </blockquote>
@@ -482,7 +482,7 @@
 <li>同一类型组件Virtual Dom没有变化，React允许开发者使用shouldComponentUpdate()来判断该组件是否进行diff，运用得当可以节省diff计算时间，提升性能</li>
 </ol>
 </blockquote>
-<p><img src="assets%5C1562723945651.png" alt="1562723945651"></p>
+<p><img src="https://i.loli.net/2020/11/09/mLuOh1tHqUVecZI.png" alt="1562723945651.png"></p>
 <p>如上图，当组件D → 组件G时，diff判断为不同类型的组件，虽然它们的结构相似甚至一样，diff仍然不会比较二者结构，会直接销毁D及其子节点，然后新建一个G相关的子tree，这显然会影响性能，官方虽然认定这种情况极少出现，但是开发中的这种现象造成的影响是非常大的。</p>
 <h4 id="c-element-diff"><a href="#c-element-diff" class="headerlink" title="c) element diff"></a>c) element diff</h4><p>对于同一层级的element节点，diff提供了以下3种节点操作：</p>
 <blockquote>
@@ -492,7 +492,7 @@
 <li>REMOVE_NODE 移除节点</li>
 </ol>
 </blockquote>
-<p><img src="assets%5C1562724094202.png" alt="1562724094202"></p>
+<p><img src="https://i.loli.net/2020/11/09/QbwmHxGfaSIkZzg.png" alt="1562724094202.png"></p>
 <p>一般diff在比较集合[A,B,C,D]和[B，A，D，C]的时候会进行全部对比，即按对应位置逐个比较，发现每个位置对应的元素都有所更新，则把旧集合全部移除，替换成新的集合，如上图，但是这样的操作在React中显然是复杂、低效、影响性能的操作，因为新集合中所有的元素都可以进行复用，无需删除重新创建，耗费性能和内存，只需要移动元素位置即可。</p>
 <p>React对这一现象做出了一个高效的策略：允许开发者对同一层级的同组子节点添加唯一key值进行区分。意义就是代码上的一小步，性能上的一大步，甚至是翻天覆地的变化！</p>
 <h1 id="2-Create-React-App脚手架"><a href="#2-Create-React-App脚手架" class="headerlink" title="2. Create React App脚手架"></a>2. Create React App脚手架</h1><p><a target="_blank" rel="noopener" href="https://www.html.cn/create-react-app/docs/getting-started/">https://www.html.cn/create-react-app/docs/getting-started/</a></p>
@@ -794,7 +794,7 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
 <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-<h4 id="e-setState的实现过程"><a href="#e-setState的实现过程" class="headerlink" title="e) setState的实现过程"></a>e) setState的实现过程</h4><p><img src="assets/3941614716-5b13d6d716035_articlex.png" alt="3941614716-5b13d6d716035_articlex"></p>
+<h4 id="e-setState的实现过程"><a href="#e-setState的实现过程" class="headerlink" title="e) setState的实现过程"></a>e) setState的实现过程</h4><p><img src="https://i.loli.net/2020/11/09/mCiq6G274oUYIAr.png" alt="3941614716-5b13d6d716035_articlex.png"></p>
 <h2 id="3-2-使用构造函数来创建组件"><a href="#3-2-使用构造函数来创建组件" class="headerlink" title="3.2 使用构造函数来创建组件"></a>3.2 使用构造函数来创建组件</h2><h3 id="3-2-1-基本使用"><a href="#3-2-1-基本使用" class="headerlink" title="3.2.1 基本使用"></a>3.2.1 基本使用</h3><pre class=" language-javascript"><code class="language-javascript">#<span class="token number">1</span><span class="token punctuation">.</span> 新建Hello<span class="token punctuation">.</span>tsx，并导出组件
 <span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> MouseEvent<span class="token punctuation">,</span> FC <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
 
@@ -1625,11 +1625,11 @@ type Props <span class="token operator">=</span> <span class="token punctuation"
 </ul>
 <blockquote>
 <p>componentWillUnmount: 当组件从 DOM 中移除时会调用如下方法，此时组件还可以被使用</p>
-<p><img src="assets/1574654437154.png" alt="1574654437154"></p>
+<p><img src="https://i.loli.net/2020/11/09/3fkUDhZFjJo9isp.png" alt="1574654437154.png"></p>
 </blockquote>
 </li>
 </ul>
-<p>React生命周期的回调函数总结成表格如下：<br><img src="assets/1574666830021.png" alt="1574666830021"></p>
+<p>React生命周期的回调函数总结成表格如下：<br><img src="https://i.loli.net/2020/11/09/Ikbxi25TNhDMEYf.png" alt="1574666830021.png"></p>
 <h2 id="6-2-生命周期函数详解"><a href="#6-2-生命周期函数详解" class="headerlink" title="6.2 生命周期函数详解"></a>6.2 生命周期函数详解</h2><blockquote>
 <p>在组件创建之前，会先初始化默认的props属性，这是全局调用一次，严格地来说，这不是组件的生命周期的一部分。</p>
 </blockquote>
@@ -1936,7 +1936,7 @@ type IState <span class="token operator">=</span> Readonly<span class="token ope
 <span class="token function">答案：好好组织你的组件，在非必须的时候，摒弃这种写法</span><span class="token punctuation">(</span>派生属性<span class="token punctuation">)</span>。type要么由props驱动，要么完全由state驱动。
 
 从这个生命周期的更新来看，react更希望将受控的props和state进行分离，就如同Redux作者Dan Abramov在redux文档当中写的一样Presentational and Container Components，将所有的组件分离称为展示型组件和容器型组件，一个只负责接收props来改变自己的样式，一个负责保持其整个模块的state。这样可以让代码更加清晰。但是在实际的业务逻辑中，我们有时很难做到这一点，而且这样可能会导致容器型组件变得非常庞大以致难以管理，如何进行取舍还是需要根据实际场景决定的</code></pre>
-<h2 id="6-5-React老版本生命周期"><a href="#6-5-React老版本生命周期" class="headerlink" title="6.5 React老版本生命周期"></a>6.5 React老版本生命周期</h2><p><img src="./assets/3284159097-5bbb08d17db33_articlex-1584956954768.png" alt="3284159097-5bbb08d17db33_articlex"></p>
+<h2 id="6-5-React老版本生命周期"><a href="#6-5-React老版本生命周期" class="headerlink" title="6.5 React老版本生命周期"></a>6.5 React老版本生命周期</h2><p><img src="https://i.loli.net/2020/11/09/Sm2VnMoJpdkhTYC.png" alt="3284159097-5bbb08d17db33_articlex-1584956954768.png"></p>
 <h1 id="7-函数组件的生命周期"><a href="#7-函数组件的生命周期" class="headerlink" title="7.函数组件的生命周期"></a>7.函数组件的生命周期</h1><h2 id="7-1-useEffect介绍"><a href="#7-1-useEffect介绍" class="headerlink" title="7.1 useEffect介绍"></a>7.1 useEffect介绍</h2><p><code>useEffect</code> 就是一个 Effect Hook，给函数组件增加了操作副作用的能力。它跟 class 组件中的 <code>componentDidMount</code>、<code>componentDidUpdate</code> 和 <code>componentWillUnmount</code> 具有相同的用途，只不过被合并成了一个 API。</p>
 <p>在调用这个hook时，就是告诉React在完成对DOM的更改后运行这个hook，在这里你可以访问到state和props。</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token operator">-</span> 纯函数：如果函数的调用参数相同，则永远返回相同的结果。它不依赖于程序执行期间函数外部任何状态或数据的变化，必须只依赖于其输入参数。
@@ -2373,7 +2373,7 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Parent<span class="token punctuation">;</span></code></pre>
 <h3 id="8-3-2-useReducer"><a href="#8-3-2-useReducer" class="headerlink" title="8.3.2 useReducer"></a>8.3.2 useReducer</h3><h4 id="a-redux介绍"><a href="#a-redux介绍" class="headerlink" title="a) redux介绍"></a>a) redux介绍</h4><p>Redux是SPA单页面应用程序中多个组件之间共享数据的一种方式。</p>
-<p><img src="D:\前端备课\17.REACT\readme\assets\1602462149160.png" alt="1602462149160"></p>
+<p><img src="https://i.loli.net/2020/11/09/Z6bCnEoLaGxBYIK.png" alt="1602462149160.png"></p>
 <pre><code>- store：共享的state数据。
 - reducers：纯函数，用于修改state，由action触发。
 - action：一个对象，是 reducers的触发器，通过dispatch来触发，action对象需要有type字段
