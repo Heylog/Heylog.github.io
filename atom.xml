@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-09T13:08:49.980Z</updated>
+  <updated>2020-11-09T13:17:05.237Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>umi&amp;dva</title>
+    <link href="https://heylog.github.io/2020/10/07/images/umi-dva/"/>
+    <id>https://heylog.github.io/2020/10/07/images/umi-dva/</id>
+    <published>2020-10-07T01:08:38.000Z</published>
+    <updated>2020-11-09T13:17:05.237Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Umi介绍&quot;&gt;&lt;a href=&quot;#1-Umi介绍&quot; class=&quot;headerlink&quot; title=&quot;1. Umi介绍&quot;&gt;&lt;/a&gt;1. Umi介绍&lt;/h1&gt;&lt;h2 id=&quot;1-1-Umi是什么&quot;&gt;&lt;a href=&quot;#1-1-Umi是什么&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="umi dva" scheme="https://heylog.github.io/tags/umi-dva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Umi&amp;dva的基本使用</title>
+    <link href="https://heylog.github.io/2020/02/25/ant-design-pro/"/>
+    <id>https://heylog.github.io/2020/02/25/ant-design-pro/</id>
+    <published>2020-02-25T08:55:32.000Z</published>
+    <updated>2020-11-09T13:21:48.013Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Ant-Design-Pro介绍&quot;&gt;&lt;a href=&quot;#1-Ant-Design-Pro介绍&quot; class=&quot;headerlink&quot; title=&quot;1.Ant Design Pro介绍&quot;&gt;&lt;/a&gt;1.Ant Design Pro介绍&lt;/h1&gt;&lt;p&gt;Ant</summary>
+        
+      
+    
+    
+    
+    <category term="React" scheme="https://heylog.github.io/categories/React/"/>
+    
+    
+    <category term="Ant Design Pro" scheme="https://heylog.github.io/tags/Ant-Design-Pro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Umi&amp;dva的基本使用</title>
+    <link href="https://heylog.github.io/2020/02/18/umi-dva/"/>
+    <id>https://heylog.github.io/2020/02/18/umi-dva/</id>
+    <published>2020-02-18T06:15:52.000Z</published>
+    <updated>2020-11-09T13:18:29.431Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Umi介绍&quot;&gt;&lt;a href=&quot;#1-Umi介绍&quot; class=&quot;headerlink&quot; title=&quot;1. Umi介绍&quot;&gt;&lt;/a&gt;1. Umi介绍&lt;/h1&gt;&lt;h2 id=&quot;1-1-Umi是什么&quot;&gt;&lt;a href=&quot;#1-1-Umi是什么&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="React" scheme="https://heylog.github.io/categories/React/"/>
+    
+    
+    <category term="Umi" scheme="https://heylog.github.io/tags/Umi/"/>
+    
+    <category term="dva" scheme="https://heylog.github.io/tags/dva/"/>
+    
+  </entry>
   
   <entry>
     <title>React的基本使用</title>
