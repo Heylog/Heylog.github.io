@@ -46,7 +46,7 @@
     <link href="https://heylog.github.io/2020/02/18/umi-dva/"/>
     <id>https://heylog.github.io/2020/02/18/umi-dva/</id>
     <published>2020-02-18T06:15:52.000Z</published>
-    <updated>2020-11-09T13:18:29.431Z</updated>
+    <updated>2020-11-09T13:31:56.639Z</updated>
     
     
       
@@ -65,6 +65,8 @@
     <category term="Umi" scheme="https://heylog.github.io/tags/Umi/"/>
     
     <category term="dva" scheme="https://heylog.github.io/tags/dva/"/>
+    
+    <category term="React" scheme="https://heylog.github.io/tags/React/"/>
     
   </entry>
   
