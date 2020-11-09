@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-05T13:36:28.124Z</updated>
+  <updated>2020-11-09T11:56:56.503Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>uni-app的基本使用</title>
+    <link href="https://heylog.github.io/2019/11/23/uniapp-ji-chu-zhi-shi/"/>
+    <id>https://heylog.github.io/2019/11/23/uniapp-ji-chu-zhi-shi/</id>
+    <published>2019-11-23T11:45:35.000Z</published>
+    <updated>2020-11-09T11:56:56.503Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;#1.uni-app的基本使用&lt;/p&gt;
+&lt;p&gt;课程介绍：&lt;/p&gt;
+&lt;p&gt;基础部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;环境搭建&lt;/li&gt;
+&lt;li&gt;页面外观配置&lt;/li&gt;
+&lt;li&gt;数据绑定&lt;/li&gt;
+&lt;li&gt;uni-app的生命周期&lt;/li&gt;
+&lt;li&gt;组件的使用&lt;/li&gt;
+&lt;li&gt;u</summary>
+        
+      
+    
+    
+    
+    <category term="uniapp" scheme="https://heylog.github.io/categories/uniapp/"/>
+    
+    
+    <category term="小程序" scheme="https://heylog.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="uniapp" scheme="https://heylog.github.io/tags/uniapp/"/>
+    
+  </entry>
   
   <entry>
     <title>组件的生命周期</title>
