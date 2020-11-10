@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-10T02:48:41.531Z</updated>
+  <updated>2020-11-10T03:01:58.717Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3.0</title>
+    <link href="https://heylog.github.io/2020/10/04/vue3-0/"/>
+    <id>https://heylog.github.io/2020/10/04/vue3-0/</id>
+    <published>2020-10-04T02:52:40.000Z</published>
+    <updated>2020-11-10T03:01:58.717Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Vue-cli脚手架介绍&quot;&gt;&lt;a href=&quot;#1-Vue-cli脚手架介绍&quot; class=&quot;headerlink&quot; title=&quot;1. Vue/cli脚手架介绍&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="Vue3.0" scheme="https://heylog.github.io/categories/Vue3-0/"/>
+    
+    
+    <category term="Vue3.0" scheme="https://heylog.github.io/tags/Vue3-0/"/>
+    
+  </entry>
   
   <entry>
     <title>Angular</title>
