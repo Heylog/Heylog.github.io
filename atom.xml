@@ -6,7 +6,7 @@
   <link href="https://heylog.github.io/atom.xml" rel="self"/>
   
   <link href="https://heylog.github.io/"/>
-  <updated>2020-11-10T02:23:13.416Z</updated>
+  <updated>2020-11-10T02:40:47.787Z</updated>
   <id>https://heylog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Angular</title>
+    <link href="https://heylog.github.io/2020/05/22/angular/"/>
+    <id>https://heylog.github.io/2020/05/22/angular/</id>
+    <published>2020-05-22T02:26:06.000Z</published>
+    <updated>2020-11-10T02:40:47.787Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-Angular-介绍&quot;&gt;&lt;a href=&quot;#1-Angular-介绍&quot; class=&quot;headerlink&quot; title=&quot;1.Angular 介绍&quot;&gt;&lt;/a&gt;1.Angular 介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="TypeScript" scheme="https://heylog.github.io/categories/TypeScript/"/>
+    
+    
+    <category term="Angular" scheme="https://heylog.github.io/tags/Angular/"/>
+    
+  </entry>
   
   <entry>
     <title>Nuxt</title>
